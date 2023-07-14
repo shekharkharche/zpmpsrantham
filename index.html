@@ -21,21 +21,29 @@
             max-height: 300px;
         }
     <style>
+        .blink-badge {
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+
         @keyframes blink {
             0% { opacity: 0; }
             50% { opacity: 1; }
             100% { opacity: 0; }
         }
 
-        .blink-badge {
-            animation: blink 1s infinite;
-        }
-
         .badge-space {
             margin-left: 5px;
         }
     </style>
-     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var badge = document.querySelector('.blink-badge');
+            setInterval(function() {
+                badge.style.visibility = (badge.style.visibility === 'hidden' ? 'visible' : 'hidden');
+            }, 1000);
+        });
+    </script>
 
 </head>
 
