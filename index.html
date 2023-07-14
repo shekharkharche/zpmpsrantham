@@ -21,6 +21,18 @@
             max-height: 300px;
         }
     </style>
+    <style>
+    @keyframes blink {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    .blink-badge {
+        animation: blink 1s infinite;
+    }
+</style>
+
 </head>
 
 <body>
