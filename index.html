@@ -61,23 +61,26 @@
     }
 </style>
      <style>
-    .running-text-container {
+   .running-text {
   overflow: hidden;
 }
 
-.running-text {
-  animation: running-text-animation 10s linear infinite;
+.running-text p {
+  animation: runningText 10s linear infinite;
   white-space: nowrap;
-  font-weight: bold; 
-  color: green;
+ font-weight: bold;
+  color: blue;
 }
 
+@keyframes runningText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-@keyframes running-text-animation {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
          </style>
          
 
@@ -272,7 +275,7 @@
         </button>
     </div>
     <div class="running-text-container">
-  <p class="running-text">Welcome to ZP Digital school Rantham.</p>
+  <p class="running-text">For the acadamic year 2023-24 School will be start on 30 June 2023.</p>
 </div>
 
     <div class="container my-4">
