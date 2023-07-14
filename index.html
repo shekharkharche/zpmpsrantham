@@ -62,9 +62,15 @@
 </style>
       <style>
    
- .running-text p {
+ .running-text {
+  overflow: hidden;
+}
+
+.styled-text {
   animation: runningText 10s linear infinite;
   white-space: nowrap;
+  font-weight: bold;
+  color: blue;
 }
 
 @keyframes runningText {
@@ -76,10 +82,6 @@
   }
 }
 
-.running-text p {
-  font-weight: bold !important;
-  color: blue !important;
-}
 </style>
 
          
@@ -274,11 +276,10 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="running-text-container">
-  <p class="running-text">For the acadamic year 2023-24 School will be start on 30 June 2023.</p>
+   <div class="running-text">
+  <p class="styled-text">This is a running text.</p>
 </div>
-
-    <div class="container my-4">
+  <div class="container my-4">
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
