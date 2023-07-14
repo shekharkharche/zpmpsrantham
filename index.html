@@ -60,6 +60,20 @@
         padding-bottom: 20px;
     }
 </style>
+    .running-text-container {
+  overflow: hidden;
+}
+
+.running-text {
+  animation: running-text-animation 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes running-text-animation {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 
 </head>
 
@@ -250,6 +264,10 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <div class="running-text-container">
+  <p class="running-text">Welcome to ZP Digital school.</p>
+</div>
+
     <div class="container my-4">
         <div class="row mb-2">
             <div class="col-md-6">
