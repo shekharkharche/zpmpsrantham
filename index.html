@@ -62,24 +62,20 @@
 </style>
       <style>
    
- .running-text {
-  overflow: hidden;
-}
-
-.styled-text {
-  animation: runningText 60s linear infinite;
-  white-space: nowrap;
-  font-weight: bold;
-  color: blue;
-}
-
 @keyframes runningText {
   0% {
     transform: translateX(100%);
-      }
+  }
   100% {
     transform: translateX(-100%);
   }
+}
+
+.running-text p {
+  animation: runningText 60s ease-in-out infinite;
+  white-space: nowrap;
+  font-weight: bold;
+  color: blue;
 }
 
 </style>
